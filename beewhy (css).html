@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BEEWHY — Afrocentric Cloth Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="beewhy.css"/>
+</head>
+<body>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a class="wa-btn" href="https://wa.me/2348129664725?text=Hello%20BEEWHY!%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.989-1.418A9.959 9.959 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.182a8.181 8.181 0 01-4.169-1.14l-.3-.177-3.096.878.84-3.044-.195-.31A8.183 8.183 0 113.818 12 8.182 8.182 0 0112 20.182z"/>
+  </svg>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">BEEWHY</a>
+  <ul class="nav-links">
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#lookbook">Lookbook</a></li>
+    <li><a href="#sizeguide">Size Guide</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#collections" onclick="toggleMenu()">Collections</a>
+  <a href="#lookbook" onclick="toggleMenu()">Lookbook</a>
+  <a href="#sizeguide" onclick="toggleMenu()">Size Guide</a>
+  <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+  <a href="#order" onclick="toggleMenu()">Order</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Fashion · Culture · Craft</p>
+    <h1 class="hero-title">BEE<em>WHY</em></h1>
+    <p class="hero-sub">Rooted in ancestry. Dressed for the now.<br>Afrocentric design woven into every thread.</p>
+    <div class="cta-row">
+      <a href="#collections" class="btn btn-gold">Explore Collection</a>
+      <a href="#lookbook" class="btn btn-outline">View Lookbook</a>
+    </div>
+  </div>
+  <div class="hero-stripe"></div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="col-header reveal">
+    <p class="sec-label">The Collections</p>
+    <h2 class="sec-title">Designs that carry a story</h2>
+  </div>
+  <div class="col-grid">
+    <div class="col-card reveal">
+      <div class="card-vis p-adinkra"><span class="card-icon">∞</span><span class="card-badge">New</span></div>
+      <div class="card-body">
+        <h3 class="card-name">Adinkra Series</h3>
+        <p class="card-desc">Symbols of wisdom, endurance, and royalty — pressed into premium unisex cuts built for the modern Afrique.</p>
+        <span class="card-price">From ₦35,000</span>
+      </div>
+    </div>
+    <div class="col-card reveal">
+      <div class="card-vis p-kente"><span class="card-icon">◈</span><span class="card-badge">Bestseller</span></div>
+      <div class="card-body">
+        <h3 class="card-name">Omo Yoruba</h3>
+        <p class="card-desc">The gold and crimson of Yoruba royalty reimagined as contemporary streetwear. Bold. Unapologetic. You.</p>
+        <span class="card-price">From ₦42,000</span>
+      </div>
+    </div>
+    <div class="col-card reveal">
+      <div class="card-vis p-bogolan"><span class="card-icon">⬡</span></div>
+      <div class="card-body">
+        <h3 class="card-name">Bogolan Earth</h3>
+        <p class="card-desc">West African mud cloth patterns translated into earthy essentials — the heritage of Mali, for everyday wear.</p>
+        <span class="card-price">From ₦28,000</span>
+      </div>
+    </div>
+    <div class="col-card reveal">
+      <div class="card-vis p-ankara"><span class="card-icon">✦</span><span class="card-badge">Limited</span></div>
+      <div class="card-body">
+        <h3 class="card-name">Ankara Fusion</h3>
+        <p class="card-desc">Classic Ankara patterns meet contemporary silhouettes — vibrant, versatile, and entirely Nigerian.</p>
+        <span class="card-price">From ₦38,000</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- LOOKBOOK -->
+<section id="lookbook">
+  <div class="lb-header reveal">
+    <p class="sec-label">Lookbook</p>
+    <h2 class="sec-title">Wear the culture</h2>
+  </div>
+  <div class="lb-tabs reveal">
+    <button class="lb-tab active" onclick="filterLookbook('all',this)">All</button>
+    <button class="lb-tab" onclick="filterLookbook('adinkra',this)">Adinkra</button>
+    <button class="lb-tab" onclick="filterLookbook('kente',this)">Kente Luxe</button>
+    <button class="lb-tab" onclick="filterLookbook('bogolan',this)">Bogolan</button>
+    <button class="lb-tab" onclick="filterLookbook('ankara',this)">Ankara</button>
+  </div>
+  <div class="lb-grid" id="lbGrid"></div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- SIZE GUIDE -->
+<section id="sizeguide">
+  <div class="sg-inner">
+    <div class="sg-header reveal">
+      <p class="sec-label">Size Guide</p>
+      <h2 class="sec-title">Find your perfect fit</h2>
+    </div>
+    <div class="sg-tabs reveal">
+      <button class="sg-tab active" onclick="showSizeTab('tops',this)">Tops &amp; Shirts</button>
+      <button class="sg-tab" onclick="showSizeTab('bottoms',this)">Bottoms</button>
+      <button class="sg-tab" onclick="showSizeTab('full',this)">Full Outfits</button>
+    </div>
+    <div id="sizeContent" class="reveal"></div>
+    <p class="sg-note reveal"><strong>Need custom measurements?</strong> We offer bespoke tailoring for all pieces. Select "Custom Measurements" in your order form and we'll guide you through the process.</p>
+  </div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-vis reveal-scale">
+    <div class="about-vis-fill"></div>
+    <div class="about-vis-label">BEEWHY</div>
+  </div>
+  <div class="about-body reveal">
+    <p class="sec-label">Our Story</p>
+    <h2 class="sec-title">Culture is the fabric</h2>
+    <p><strong>BEEWHY</strong> was born in Lagos with a simple belief — that African design deserves to stand on the world stage, not as an accessory, but as the main event.</p>
+    <p>Every piece we create draws from generations of artistry: the geometry of Adinkra, the fire of Kente, the earth of Bogolan. We translate these into garments you can live in, celebrate in, and be seen in.</p>
+    <p>We work with local artisans, source ethically, and make sure that when you wear BEEWHY, you carry something real.</p>
+    <div class="stats">
+      <div><div class="stat-n">200+</div><div class="stat-l">Pieces Crafted</div></div>
+      <div><div class="stat-n">12</div><div class="stat-l">Artisan Partners</div></div>
+      <div><div class="stat-n">100%</div><div class="stat-l">African-Made</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="tst-header reveal">
+    <p class="sec-label">What people are saying</p>
+    <h2 class="sec-title">Voices of the community</h2>
+  </div>
+  <div class="tst-grid">
+    <div class="tst-card reveal">
+      <div class="tst-stars">★★★★★</div>
+      <p class="tst-quote">The Kente Luxe agbada I ordered was beyond anything I expected. The quality, the detail, the fit — BEEWHY is the real deal.</p>
+      <div class="tst-author"><div class="tst-avatar">AO</div><div><div class="tst-name">Adaeze Okafor</div><div class="tst-loc">Lagos, Nigeria</div></div></div>
+    </div>
+    <div class="tst-card reveal">
+      <div class="tst-stars">★★★★★</div>
+      <p class="tst-quote">Wore the Adinkra Series to my sister's wedding and had everyone asking where it was from. I'm obsessed with this brand.</p>
+      <div class="tst-author"><div class="tst-avatar">KM</div><div><div class="tst-name">Kwame Mensah</div><div class="tst-loc">Accra, Ghana</div></div></div>
+    </div>
+    <div class="tst-card reveal">
+      <div class="tst-stars">★★★★★</div>
+      <p class="tst-quote">Finally a brand that actually honours our culture without watering it down. The Bogolan Earth collection is my everyday uniform now.</p>
+      <div class="tst-author"><div class="tst-avatar">FD</div><div><div class="tst-name">Fatou Diallo</div><div class="tst-loc">Dakar, Senegal</div></div></div>
+    </div>
+    <div class="tst-card reveal">
+      <div class="tst-stars">★★★★★</div>
+      <p class="tst-quote">The bespoke service is incredible. They took my measurements, understood my vision, and delivered a masterpiece in under two weeks.</p>
+      <div class="tst-author"><div class="tst-avatar">TN</div><div><div class="tst-name">Temi Nwosu</div><div class="tst-loc">Abuja, Nigeria</div></div></div>
+    </div>
+    <div class="tst-card reveal">
+      <div class="tst-stars">★★★★☆</div>
+      <p class="tst-quote">Ankara Fusion is exactly what I've been looking for. Contemporary cuts with authentic fabric. Will be ordering again very soon.</p>
+      <div class="tst-author"><div class="tst-avatar">ZB</div><div><div class="tst-name">Zara Bello</div><div class="tst-loc">London, UK</div></div></div>
+    </div>
+    <div class="tst-card reveal">
+      <div class="tst-stars">★★★★★</div>
+      <p class="tst-quote">BEEWHY ships with care and communicates throughout. In a market full of disappointing online stores, this team restores your faith.</p>
+      <div class="tst-author"><div class="tst-avatar">EM</div><div><div class="tst-name">Emeka Madu</div><div class="tst-loc">Port Harcourt, Nigeria</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="pr-header reveal">
+    <p class="sec-label">Pricing</p>
+    <h2 class="sec-title">Investment in identity</h2>
+  </div>
+  <div class="pr-grid">
+    <div class="pr-card reveal">
+      <div class="pr-tier">Essential</div>
+      <div class="pr-price">₦28,000 <span>– ₦38,000</span></div>
+      <p class="pr-desc">Ready-to-wear pieces from our standard collections. Crafted with care, shipped fast.</p>
+      <ul class="pr-features">
+        <li>Bogolan Earth &amp; Ankara Fusion lines</li>
+        <li>Standard sizing (XS – XXL)</li>
+        <li>Delivery within 5–7 business days</li>
+        <li>WhatsApp order support</li>
+      </ul>
+      <a href="#order" class="btn btn-outline" style="width:100%;text-align:center;display:block">Order Now</a>
+    </div>
+    <div class="pr-card featured reveal">
+      <div class="pr-feat-badge">Most Popular</div>
+      <div class="pr-tier">Signature</div>
+      <div class="pr-price">₦42,000 <span>– ₦65,000</span></div>
+      <p class="pr-desc">Premium collection pieces with refined detailing. Our bestselling line for events and everyday luxury.</p>
+      <ul class="pr-features">
+        <li>Adinkra Series &amp; Kente Luxe lines</li>
+        <li>Standard &amp; semi-custom sizing</li>
+        <li>Delivery within 7–10 business days</li>
+        <li>Dedicated order liaison</li>
+        <li>Free fitting consultation</li>
+      </ul>
+      <a href="#order" class="btn btn-gold" style="width:100%;text-align:center;display:block">Order Now</a>
+    </div>
+    <div class="pr-card reveal">
+      <div class="pr-tier">Bespoke</div>
+      <div class="pr-price">₦80,000 <span>+</span></div>
+      <p class="pr-desc">Fully custom garments built around your measurements, vision, and occasion. One-of-a-kind, always.</p>
+      <ul class="pr-features">
+        <li>Any collection or original design</li>
+        <li>Full custom measurements</li>
+        <li>2–3 week production timeline</li>
+        <li>Personal artisan assignment</li>
+        <li>Revisions included</li>
+        <li>Packaging &amp; presentation box</li>
+      </ul>
+      <a href="#order" class="btn btn-outline" style="width:100%;text-align:center;display:block">Book Consultation</a>
+    </div>
+  </div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- ORDER -->
+<section id="order">
+  <div class="ord-inner">
+    <div class="ord-header reveal">
+      <p class="sec-label">Place an Order</p>
+      <h2 class="sec-title">Wear your story</h2>
+    </div>
+    <div class="form-grid">
+      <div class="field reveal"><label>First Name</label><input type="text" placeholder="Chisom"/></div>
+      <div class="field reveal"><label>Last Name</label><input type="text" placeholder="Adeyemi"/></div>
+      <div class="field reveal"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="field reveal"><label>Phone / WhatsApp</label><input type="tel" placeholder="+234 801 000 0000"/></div>
+      <div class="field reveal"><label>Collection</label>
+        <select>
+          <option value="">— Select a collection —</option>
+          <option>Adinkra Series</option>
+          <option>Kente Luxe</option>
+          <option>Bogolan Earth</option>
+          <option>Ankara Fusion</option>
+          <option>Bespoke / Custom</option>
+        </select>
+      </div>
+      <div class="field reveal"><label>Tier</label>
+        <select>
+          <option value="">— Select tier —</option>
+          <option>Essential</option>
+          <option>Signature</option>
+          <option>Bespoke</option>
+        </select>
+      </div>
+      <div class="field reveal"><label>Size</label>
+        <select>
+          <option value="">— Select size —</option>
+          <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+          <option>Custom Measurements</option>
+        </select>
+      </div>
+      <div class="field reveal"><label>Delivery Location</label><input type="text" placeholder="Lagos, Abuja, Port Harcourt..."/></div>
+      <div class="field form-full reveal"><label>Message / Special Requests</label>
+        <textarea placeholder="Tell us about your vision, customization needs, event date, or any questions..."></textarea>
+      </div>
+      <div class="field form-full form-submit reveal">
+        <button class="btn btn-gold" onclick="submitOrder()">Submit Order Request →</button>
+        <p class="form-note">We'll reach out within 24 hours via WhatsApp or email to confirm your order and payment details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="kdiv"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="ct-inner">
+    <p class="sec-label reveal">Get in Touch</p>
+    <h2 class="sec-title reveal">Let's connect</h2>
+    <p class="ct-body reveal">Custom orders, collaborations, wholesale, or just saying hello — we love hearing from the community.</p>
+    <div class="ct-links reveal">
+      <a href="mailto:lawaldhikrullah02@gmail.com" class="ct-link">
+        <div class="ct-icon">✉</div><span class="ct-lbl">Email</span>
+      </a>
+      <a href="https://wa.me/2348129664725" class="ct-link">
+        <div class="ct-icon" style="color:var(--kg);border-color:rgba(45,106,79,.5)">✆</div><span class="ct-lbl">WhatsApp</span>
+      </a>
+      <a href="https://instagram.com/beewhy_01" class="ct-link">
+        <div class="ct-icon" style="color:var(--kr);border-color:rgba(178,34,34,.4)">⊕</div><span class="ct-lbl">Instagram</span>
+      </a>
+      <a href="https://twitter.com/beewhy145" class="ct-link">
+        <div class="ct-icon">✦</div><span class="ct-lbl">Twitter / X</span>
+      </a>
+    </div>
+    <a href="#order" class="btn btn-gold reveal">Book a Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">BEEWHY</span>
+  <ul class="footer-links">
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#lookbook">Lookbook</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 BEEWHY. Lagos, Nigeria.</span>
+</footer>
+
+<!-- TOAST -->
+<div id="toast">Order request submitted — we'll be in touch! 🤝</div>
+
+
+<script src="beewhy.js"></script>
+</body>
+</html>
